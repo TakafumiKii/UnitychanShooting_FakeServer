@@ -110,10 +110,11 @@
     <Compile Include="DataBase\UserScore.cs" />
     <Compile Include="DataBase\User.cs" />
     <Compile Include="Network\ClientData.cs" />
-    <Compile Include="Network\Information\MessageCommnad.cs" />
     <Compile Include="Network\MessageClient.cs" />
     <Compile Include="Network\UserScoreRankData.cs" />
     <Compile Include="Network\SendMessageWork.cs" />
+    <Compile Include="UCS_Netcode\Scheme\Information.cs" />
+    <Compile Include="UCS_Netcode\Scheme\MessageCommnad.cs" />
     <Compile Include="Utility\ConsoleLog.cs" />
     <Compile Include="Utility\FileConverter.cs" />
     <Compile Include="Utility\TextBoxStreamWriter.cs" />
@@ -132,7 +133,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Network\Information\Information.cs" />
     <Compile Include="Network\MessageManager.cs" />
     <Compile Include="Network\MessageHeader.cs" />
     <Compile Include="Network\MessageServer.cs" />
@@ -159,6 +159,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="UCS_Netcode\.git" />
+    <None Include="UCS_Netcode\.gitignore" />
+    <None Include="UCS_Netcode\LICENSE" />
+    <None Include="UCS_Netcode\README.md" />
+    <None Include="UCS_Netcode\Scheme\Information.cs.meta" />
+    <None Include="UCS_Netcode\Scheme\MessageCommnad.cs.meta" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
