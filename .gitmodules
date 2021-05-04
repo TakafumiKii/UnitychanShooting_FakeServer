@@ -1,0 +1,3 @@
+[submodule "UCS_Netcode"]
+	path = FakeServer/UCS_Netcode
+	url = https://github.com/TakafumiKii/unity-chan-shooting_Netcode.git
