@@ -110,9 +110,9 @@
     <Compile Include="DataBase\UserScore.cs" />
     <Compile Include="DataBase\User.cs" />
     <Compile Include="DisplayScheme\ClientData.cs" />
-    <Compile Include="UCS_Netcode\Netcode\MessageClient.cs" />
+    <Compile Include="UCS_Netcode\Message\MessageClient.cs" />
     <Compile Include="DisplayScheme\UserScoreRankData.cs" />
-    <Compile Include="UCS_Netcode\Netcode\SendMessageWork.cs" />
+    <Compile Include="UCS_Netcode\Message\SendMessageWork.cs" />
     <Compile Include="UCS_Netcode\Scheme\Information.cs" />
     <Compile Include="UCS_Netcode\Scheme\MessageCommnad.cs" />
     <Compile Include="Utility\ConsoleLog.cs" />
@@ -133,8 +133,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UCS_Netcode\Netcode\MessageManager.cs" />
-    <Compile Include="UCS_Netcode\Netcode\MessageHeader.cs" />
+    <Compile Include="UCS_Netcode\Message\MessageManager.cs" />
+    <Compile Include="UCS_Netcode\Message\MessageHeader.cs" />
     <Compile Include="Server\MessageServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
