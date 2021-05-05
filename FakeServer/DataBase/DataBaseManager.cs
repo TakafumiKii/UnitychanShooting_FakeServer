@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Data.SQLite;
 using System.Data.Linq;
-using FakeServer.Network.Information;
+using FakeServer.Netcode.Scheme;
 
 namespace FakeServer.DataBase
 {

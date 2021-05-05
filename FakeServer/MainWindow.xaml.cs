@@ -24,15 +24,15 @@ namespace FakeServer
         //        Server
         public int PortNo { get; set; } = 40080;
 
-        Network.MessageServer Server;
+        Server.MessageServer Server;
         DataBase.DataBaseManager DBManager = new DataBase.DataBaseManager();
 
-        public ReadOnlyObservableCollection<Network.ClientData> ClientDataCollection { get { return Server.ClientDataCollection.ReadOnlyCollection; } }
-        public ReadOnlyObservableCollection<Network.UserScoreRankData> UserScoreRankDataCollection { get { return Server.UserScoreRankDataCollection.ReadOnlyCollection; } }
+        public ReadOnlyObservableCollection<DisplayScheme.ClientData> ClientDataCollection { get { return Server.ClientDataCollection.ReadOnlyCollection; } }
+        public ReadOnlyObservableCollection<DisplayScheme.UserScoreRankData> UserScoreRankDataCollection { get { return Server.UserScoreRankDataCollection.ReadOnlyCollection; } }
         
         public MainWindow()
         {
-            Server = new Network.MessageServer(DBManager);
+            Server = new Server.MessageServer(DBManager);
 
             DataContext = this;
             InitializeComponent();

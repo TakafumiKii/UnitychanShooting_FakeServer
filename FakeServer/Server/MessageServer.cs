@@ -1,8 +1,5 @@
-﻿#if UNITY_EDITOR || UNITY_STANDALONE    //  TODOあとで正式な対応をする
-#else
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
+
 using System.Text;
 using System.Diagnostics;
 
@@ -11,19 +8,15 @@ using System.Threading.Tasks;
 using System.Net.Sockets;
 using System.Net;
 
-
 using Newtonsoft.Json;
 
-using FakeServer.Network.Information;
-using FakeServer.Utility;
-
-using System.Windows.Data;
-using System.ComponentModel;
-using System.Collections.ObjectModel;
-
-
-namespace FakeServer.Network
+namespace FakeServer.Server
 {
+    using Netcode.Message;
+    using Netcode.Scheme;
+    using Utility;
+    using DisplayScheme;
+
     class MessageServer
     {
         class MessageReciever : MessageManager.IRecieveMessage
@@ -286,8 +279,5 @@ namespace FakeServer.Network
                 }
             }
         }
-
-
     }
 }
-#endif

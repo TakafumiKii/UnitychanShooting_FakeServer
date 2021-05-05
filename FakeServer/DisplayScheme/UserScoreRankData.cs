@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel;
 
-using FakeServer.Network.Information;
+using FakeServer.Netcode.Scheme;
 using System.Runtime.CompilerServices;
 
-namespace FakeServer.Network
+namespace FakeServer.DisplayScheme
 {
     public class UserScoreRankData : INotifyPropertyChanged
     {
